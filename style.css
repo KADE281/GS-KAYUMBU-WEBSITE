@@ -1,148 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-
+  font-family: Arial, sans-serif;
 }
 
-#header-container  #schl-log {
-  height: 100px;
-  width: auto;
-  float: left;
-  border-radius: 50%;
-}
-
-#header-container  #welcome-message {
-font-weight: bolder;
-font-style: oblique;
-text-align:center;
-}
-
-/* General navbar styling */
-#header-container {
-  top: 0;
-  position: fixed;
-  background: linear-gradient(90deg, #035010, #048020);
-  padding: 12px 20px;
-  width: 100%;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+.navbar{
+  background-color: green;
+  color: white;
+  padding: 8px 10px;
   white-space: nowrap;
 }
-#nav-container {
-  flex-wrap: nowrap;
-  padding: 3px 2px;
 
+.nav-header{
+  
+  display: flex ;
+  justify-content: space-between;
 }
-/* Navbar links */
-#header-container #nav-container a {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Segoe UI', sans-serif;
-  padding:10px 15px;
-  color: white;
-  transition: all 0.3s ease;
-  border-radius: 6px;
+.nav-logo{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 3%;
 }
 
-#header-container #nav-container a:hover {
-  background-color: white;
-  color: #035010;
-  transform: scale(1.05);
-}
 
-/* Welcome message */
-#header-container #welcome-message h3 {
-  color: white;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
 
-/* Dropdown container */
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-/* Dropdown button */
-.dropbtn {
-  background: #ffffff20;
-  color: white;
-  font-weight: bold;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 8px 14px;
-  border: 2px solid white;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.dropbtn:hover {
-  background-color: white;
-  color: #035010;
-  transform: scale(1.05);
-}
-
-/* Dropdown content */
-.dropdown-content {
+.menu-btn{
   display: none;
-  position: absolute;
-  right: 0;
-  background-color: #fff;
-  min-width: 180px;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.25);
-  animation: fadeIn 0.3s ease;
-}
-
-.dropdown-content a {
-  color: #035010;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.dropdown-content a:hover {
-  background-color: #035010;
-  color: white;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-   background: linear-gradient(90deg, #035010, #048020);
-}
-
-/* Mobile menu toggle */
-#menu-toggle {
-  display: none;
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
   font-size: 30px;
   cursor: pointer;
+
+}
+
+.navtitle {
+  position: absolute;       /* independent of buttons */
+  left: 50%;                /* move to center of parent */
+  transform: translateX(-50%); /* truly center it */
+  font-size: 22px;
+  font-weight: bold;
   color: white;
-  text-align: right;
+  top: 8%;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  margin-top: 15px;
+ 
   
 }
+#navItemDropDown {
+  position: absolute;
+  top:0px  ;
+  right:20px;
+  z-index: 1000;
 
-
-
-/* Responsive design */
-@media(max-width: 640px) {
-  #menu-toggle {
-    display: block;
-    margin-right: 4%;
-  }
-
-  #nav-container > a, .dropdown {
-    display: none;
-  }
-
-  #nav-container.active a, 
-  #nav-container.active .dropdown {
-    display: block;
-    text-align: left;
-    margin: 8px 0px;
-  }
 }
+
+.UserIconBtn {
+
+  background-color: rgb(7, 105, 7);
+  padding: 15px ;
+  border-radius:50%;
+  border: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.dropDownUser {
+  display: none;
+  list-style: none;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.dropDownUser li {
+  padding: 8px 0;
+}
+
+.UserIconBtn:hover{
+  display: column;
+  background-color: rgb(6, 47, 94);
+}
+
+.nav-links li{
+  margin: 10px;
+  padding: 8px;
+}
+
+.nav-links a{
+  background-color: rgb(7, 105, 7);
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+
+
+}
+.nav-links li a:hover{
+   background-color: rgb(6, 47, 94);
+}
+
+
+ /*Responsiveness*/
+
+ @media (max-width: 800px) {
+
+ #navLinks .listlink{
+  display:none
+}
+.menu-btn{
+  display: block;
+  margin-right: 2%;
+  margin-top: 15%;
+}
+
+
+
+
+ 
+}
+
+
+
+
+
+
+

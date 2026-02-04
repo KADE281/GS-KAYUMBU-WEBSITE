@@ -4,43 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <nav class="navbar" id="navContainer">
+     <div class="nav-header">
+      <img src="imageur.jpeg" alt="gs kayumbu logo" class="nav-logo" />
+      <h2 class="navtitle">GS KAYUMBU</h2>
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+     </div>
 
-  <header id="header-container">
-  <nav id="nav-container">
+     <ul class="nav-links" id="navLinks">
+      <li class="listlink"><a href="index.html">Home</a></li>
+      <li class="listlink"><a href="about.html">About</a></li>
+      <li class="listlink"><a href="admissions.html">Admissions</a></li>
+      <li class="listlink"><a href="academics.html">Academics</a></li>
+      <li class="listlink"><a href="contact.html">Contact </a></li>
+      <li class="listlink"><a href="event.html">Events</a></li>
 
-    <div id="welcome-message">
-      <div class="all-together">
-        <img src="imageur.jpeg" alt="school logo" id="schl-log"><br><br>
-        <h3>Welcome to GS Kayumbu /TSS</h3><br>
-      </div>
-    </div>
+      <li class="listlink" id="navItemDropDown">
+        <button class="UserIconBtn">
+          <i class=" fa-user" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i>
+        </button>
+        <ul class="dropDownUser">
+          <li><a href="HOF.html">HOF</a></li>
+          <li><a href="DOS.html">DOS</a></li>
+          <li><a href="accountant.html">Accountant</a></li>
+          <li><a href="teacher-login.html">Teacher Login</a><li> 
+          <li><a href="teacher-login.html">Teacher Login</a></li>
+          <li><a href="login.html">Student Login</a></li>  
+        </ul>   
 
-    <div id="menu-toggle">☰</div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="academics.html">Academics</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-
-    <!-- Login Dropdown -->
-    <div class="dropdown">
-      <button class="dropbtn">Login</button>
-      <div class="dropdown-content">
-        <a href="login-leader.html">Leader</a>
-        <a href="login-teacher.html">Teacher</a>
-        <a href="login-accountant.html">Accountant</a>
-        <a href="login-dos.html">DOS</a>
-        <a href="login-student.html">Student</a>
-      </div>
-    </div>
-
+      </li>
+     </ul>
   </nav>
-</header>
+  
+
 
   <script src="index.js"></script>
 </body>
